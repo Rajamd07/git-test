@@ -35,7 +35,7 @@ function getTasks(){
         // console.log(li);
         let link=document.createElement("a")
         link.className="delete-item secondary-content"
-        link.innerHTML=<i class="fa fa-remove"></i> 
+        link.innerHTML=`<i class="fa fa-remove"></i>` 
         li.appendChild(link) 
         // console.log(li);
         taskList.appendChild(li)
@@ -69,7 +69,7 @@ function addTask(e) {
         let link=document.createElement("a")
         link.className="delete-item secondary-content"
         li.appendChild(link)
-        link.innerHTML=<i class="fa fa-remove"></i>
+        link.innerHTML=`<i class="fa fa-remove"></i>`
         taskList.appendChild(li)
         storeTaskInLocalStorage(taskInput.value)
         taskInput.value=""
